@@ -16,6 +16,12 @@ public interface IControlador {
 
 	// Método terminar
 	void terminar();
+	
+	List<Aula>getAulas();
+	
+	List<Profesor>getProfesores();
+	
+	List<Reserva>getReservas();
 
 	// Método insertarAula
 	void insertarAula(Aula aula) throws OperationNotSupportedException;

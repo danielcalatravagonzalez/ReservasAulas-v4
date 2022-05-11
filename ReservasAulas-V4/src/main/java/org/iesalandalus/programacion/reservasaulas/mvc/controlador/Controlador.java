@@ -44,10 +44,20 @@ public class Controlador implements IControlador {
 		System.out.println("¡Hasta la próxima!");
 	}
 	
+	@Override
+	public List<Aula> getAulas() {
+		return Imodelo.getAulas();
+	}
+	
 	//Método insertarAula(Aula)
 	@Override
 	public void insertarAula(Aula aula) throws OperationNotSupportedException {
 		Imodelo.insertarAula(aula);
+	}
+	
+	@Override
+	public List<Profesor> getProfesores() {
+		return Imodelo.getProfesores();
 	}
 	
 	//Método insertarProfesor
@@ -103,6 +113,11 @@ public class Controlador implements IControlador {
 		return listaReservas;
 	}
 	
+	@Override
+	public List<Reserva> getReservas() {
+		return Imodelo.getReservas();
+	}
+	
 	//Método realizarReserva
 	@Override
 	public void realizarReserva(Reserva reserva) throws OperationNotSupportedException {
@@ -141,5 +156,7 @@ public class Controlador implements IControlador {
 	public boolean consultarDisponibilidad(Aula aula, Permanencia permanencia) {
 		boolean disponibilidad = Imodelo.consultarDisponibilidad(aula, permanencia);
 		return disponibilidad;
-	}	
-}
+	}
+		
+}	
+

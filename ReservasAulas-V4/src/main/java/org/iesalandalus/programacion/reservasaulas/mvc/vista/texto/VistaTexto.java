@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.reservasaulas.mvc.vista;
+package org.iesalandalus.programacion.reservasaulas.mvc.vista.texto;
 
 import java.util.Iterator;
 import java.util.List;
@@ -11,14 +11,15 @@ import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Permanenci
 import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Profesor;
 import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Reserva;
 import org.iesalandalus.programacion.reservasaulas.mvc.modelo.dominio.Tramo;
+import org.iesalandalus.programacion.reservasaulas.mvc.vista.IVista;
 import org.iesalandalus.programacion.reservasaulas.mvc.controlador.IControlador;
 
-public class Vista implements IVista {
+public class VistaTexto implements IVista {
 	// Atributos
 	private IControlador Icontrolador;
 
 //Constructor por defecto
-	public Vista() {
+	public VistaTexto() {
 		Opcion.setVista(this);
 	}
 

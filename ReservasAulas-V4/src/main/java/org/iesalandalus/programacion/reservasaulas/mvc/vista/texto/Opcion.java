@@ -1,4 +1,4 @@
-package org.iesalandalus.programacion.reservasaulas.mvc.vista;
+package org.iesalandalus.programacion.reservasaulas.mvc.vista.texto;
 
 public enum Opcion {
 	//Opciones del enum Opcion
@@ -80,7 +80,7 @@ public enum Opcion {
 	
 	//Atributos
 	private String mensajeAMostrar;
-	private static Vista vista;
+	private static VistaTexto vista;
 
 	//Método Opcion (String)
 	private Opcion(String mensaje) {
@@ -96,7 +96,7 @@ public enum Opcion {
 	public abstract void ejecutar();
 
 	//Método setVista(Vista)
-	public static void setVista(Vista vista) {
+	public static void setVista(VistaTexto vista) {
 		if (vista == null) {
 			throw new NullPointerException("ERROR: La vista no pueda ser nula.");
 		}
